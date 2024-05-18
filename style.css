@@ -1,0 +1,175 @@
+body{
+  font-family: Montserrat;
+  margin: 0;
+  --x: calc(var(--posX, 0) * 1px);
+  --y: calc(var(--posY, 0) * 1px);
+  background-image: 
+    linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+    radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+    radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+    radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+    radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+    linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+  background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+}
+
+body::-webkit-scrollbar{
+  width: 0;
+}
+
+.main-screen {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.header-group{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+.center-group{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.main-screen .overlap-group {
+  width: 960px;
+  height: 108px;
+  background-color: var(--collection-1-uetk-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 33px;
+  margin: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.main-screen .overlap {
+  background-color: var(--collection-1-matte);
+  border-radius: 10px;
+  font-size: 27px;
+  padding: 15px;
+  width: 930px;
+  height: 840px;
+  margin: 20px;
+  overflow: auto;
+}
+
+.main-screen .overlap::-webkit-scrollbar{
+  width: 0;
+}
+
+.main-screen .left-menu .text-wrapper, .right-menu .text-wrapper{
+  width: 204px;
+  color: #000000;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 5px;
+  margin-right: 10px;
+}
+
+.main-screen .left-menu {
+  background-color: var(--collection-1-matte);
+  border-radius: 10px;
+  padding: 15px;
+  height: 840px;
+  width: 200px;
+  margin: 20px;
+}
+
+.main-screen .line {
+  width: 92px;
+  height: 1px;
+  object-fit: cover;
+}
+
+.main-screen .right-menu {
+  background-color: var(--collection-1-matte);
+  border-radius: 10px;
+  padding: 15px;
+  height: 840px;
+  width: 200px;
+  margin: 20px;
+}
+.main-screen .logos {
+  height: 108px;
+  background-color: var(--collection-1-matte);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 230px;
+  margin: 20px;
+  min-width: 230px;
+}
+
+.main-screen .step-logo-rus, .small-logo-blue {
+  width: 99px;
+  height: 77px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.main-screen .small-logo-blue {
+  width: 77px;
+}
+
+.main-screen .overlap-2 {
+  width: 230px;
+  height: 108px;
+  background-color: var(--collection-1-matte);
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 12px;
+  margin: 20px;
+  min-width: 230px;
+  cursor: pointer;
+}
+
+.main-screen .overlap-2 .text-wrapper{
+  width: 197px;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+}
+
+.main-screen .html-svgrepo-com, .css-svgrepo-com, .js-svgrepo-com {
+  width: 50px;
+  height: 50px;
+}
+.white{
+  color: white;
+}
+.line{
+  margin: 5px;
+  height: 2px;
+}
+.color{
+  color: #0c1268;
+}
+
+.practice-overlap{
+  background-color: var(--collection-1-matte);
+  border-radius: 10px;
+  font-size: 27px;
+  padding: 15px;
+  width: 1470px;
+  height: 840px;
+  margin: 20px;
+  overflow: auto;
+}
+.practice-overlap::-webkit-scrollbar{
+  width: 0;
+}
+
+a{
+  text-decoration: none;
+}
