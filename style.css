@@ -11,6 +11,10 @@ body{
     radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
     linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
   background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+  @media (max-width: 1000px) {
+    background-image: none;
+    background-color: rgb(14, 14, 84);
+}
 }
 
 body::-webkit-scrollbar{
