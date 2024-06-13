@@ -179,3 +179,45 @@ body::-webkit-scrollbar{
 a{
   text-decoration: none;
 }
+
+@media (max-width: 1000px) {
+  .center-group{
+    flex-wrap: wrap;
+    .overlap{
+      order: 1;
+      font-size: 30px;
+      height: auto;
+    }
+    .left-menu{
+      order: 2;
+      width: 42%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: auto;
+    }
+    .right-menu{
+      order: 3;
+      width: 43%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      height: auto;
+    }
+    .right-menu .text-wrapper{
+      width: auto;
+      text-align: center;
+      font-size: 30px;
+    }
+    .left-menu .text-wrapper{
+      width: auto;
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+  .practice-overlap{
+    height: auto;
+  }
+}
