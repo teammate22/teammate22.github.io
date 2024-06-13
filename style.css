@@ -196,6 +196,7 @@ a{
       align-items: center;
       justify-content: space-evenly;
       height: auto;
+      gap: 15px;
     }
     .right-menu{
       order: 3;
@@ -205,6 +206,7 @@ a{
       align-items: center;
       justify-content: space-evenly;
       height: auto;
+      gap: 15px;
     }
     .right-menu .text-wrapper{
       width: auto;
